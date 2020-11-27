@@ -1,0 +1,188 @@
+body{
+	font-family: 'Castoro', serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+*,*::before,*::after{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+/*---layout---*/
+	body{
+	display: grid;
+	grid-template-areas: 
+		"fejlec"
+		"kontent"
+		"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+	}
+	header{
+	background-color: #45A4BC;
+	grid-area: fejlec;
+
+	}
+	main{
+	background-color: #C5E5EE;
+	grid-area: kontent;
+	}
+	footer{
+	background-color: #265BEE;
+	grid-area: lablec;
+	}
+
+/*---Általános---*/
+	a{
+		color:#000000;
+		text-decoration: none;
+	}
+
+/*--header--*/
+	header{
+		line-height: 2rem;
+		position: relative;
+
+	}
+	.navigacios_blokk{
+		cursor: pointer;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	.menu_class{
+		cursor: pointer;
+		background-color: #2626EE;
+		width: 6rem;
+		text-align: center;
+		border-radius: 1rem;
+		color: #000000;
+		font-size: 1.15rem;
+		font-weight: 500;
+		user-select: none;
+		margin-left: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.menu_class:hover{
+		-webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 5px 4px rgba(0,0,0,0.5); 
+		box-shadow: 0px 10px 13px -7px #000000, 0px 0px 5px 4px rgba(0,0,0,0.5);
+	}
+
+	.header_almenu:hover{
+		text-decoration: underline;
+	}
+	.header_almenu{
+		padding:1rem;
+		line-height: 1.5rem;
+	}
+	.cim{
+		display: block;
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 600;
+		line-height: 5rem;
+	}
+
+/*---lenyilo_menu---*/
+	#lenyilo_menu{
+		position: absolute;
+		left: 1rem;
+		top: 8rem;
+		display: none;
+		background-color: white;
+		border:1px solid grey;
+		border-radius: 8px;
+		text-align: left;
+		-webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 5px 4px rgba(0,0,0,0.5); 
+		box-shadow: 0px 10px 13px -7px #000000, 0px 0px 5px 4px rgba(0,0,0,0.5);
+		
+
+	}
+
+	#lenyilo_menu.latszodik{
+		display: block;
+	}
+
+/*---kezdolap---*/
+	.kezdolap{
+		display: block;
+		width: 15rem;
+		margin-left:40rem;
+	}
+	.kezdocim{
+		font-size: 2rem;
+		font-weight: 555;
+		margin-left: 30rem;
+	}
+	.kezdo_szoveg{
+		margin-left: 2rem;
+	}
+
+/*---önéletrajz&hobbi---*/
+	.oneletrajz_cim{
+		display: block;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		text-decoration: underline;
+	}
+	.adatok_1{
+		font-size: 1.25rem;
+		font-weight: 543;
+		text-decoration: underline;
+		line-height: 2rem;
+		margin-top:5rem;
+	}
+	.adatok_2{
+		font-weight: 500;
+		text-decoration: underline;
+		margin-left: 1rem;
+	}
+	.adatok_3{
+		display: inline-block;
+		font-weight: 400;
+		margin-left: 5rem;
+	}
+	.adatok_4{
+		display: block;
+		font-size: 1.25rem;
+		font-weight: 543;
+		text-decoration: underline;
+		line-height: 2rem;
+		transform: translateY(-6rem);
+	}
+	.adatok_5{
+		display: block;
+		font-size: 1.25rem;
+		font-weight: 543;
+		text-decoration: underline;
+		line-height: 2rem;
+		
+
+	}
+	.tablokep{
+		display: block;
+		width: 10rem;
+		margin-left:3rem;
+	}
+	.tablazat{
+		transform: translateY(-8rem);
+	}
+
+/*---grafikai terv---*/
+	.grafterv{
+		display: block;
+		max-width: 40%;
+	}
+	.szoveg{
+		display: inline-grid;
+	}
+	.link:hover{
+		cursor: pointer;
+		text-decoration: underline;
+	}
